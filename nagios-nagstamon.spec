@@ -1,13 +1,12 @@
 Summary:	Nagios Status monitor for your Desktop
 Name:		nagios-nagstamon
 Version:	0.9.4
-Release:	0.9
+Release:	1
 License:	GPL v2
 Group:		X11/Applications/Networking
 Source0:	http://downloads.sourceforge.net/nagstamon/nagstamon_%{version}.tar.gz
 # Source0-md5:	52cd8bfc28086e29a84eccb607e9ce3c
 Source1:	nagstamon.desktop
-# Source1-md5:	bf06c260f3ace25a415927bc1aac9914
 URL:		http://nagstamon.sourceforge.net/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
@@ -69,7 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/nagstamon
 %{_mandir}/man1/nagstamon.1*
 %{_desktopdir}/nagstamon.desktop
-/usr/share/pixmaps/nagstamon.png
+%{_pixmapsdir}/nagstamon.png
 %dir %{py_sitescriptdir}/Nagstamon
 %{py_sitescriptdir}/Nagstamon/*.py[co]
 %dir %{py_sitescriptdir}/Nagstamon/resources
