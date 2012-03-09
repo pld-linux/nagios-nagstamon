@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=nagstamon
-Comment=Nagios status monitor 
+Name=Nagstamon
+Comment=Nagios status monitor
 Icon=nagstamon
 Exec=nagstamon
 Terminal=false
