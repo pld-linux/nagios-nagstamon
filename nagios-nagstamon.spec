@@ -10,8 +10,9 @@ Source1:	nagstamon.desktop
 URL:		http://nagstamon.sourceforge.net/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
-# for pkg_resources import
+# python-distribute for pkg_resources import
 Requires:	python-distribute
+Requires:	python-lxml
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
